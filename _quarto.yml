@@ -1,0 +1,49 @@
+project:
+  type: website
+  output-dir: docs
+execute:
+  freeze: auto
+
+website:
+  title: "Data Analytics by R and else"
+  favicon: images/favicon.png
+  site-url: https://alirezach.github.io/
+  description: "A passionate Data Analytics and AI enthusiast"
+  navbar:
+#    logo: images/logo-light.png
+    logo-alt: "Alireza Chamanzar"
+    title: false
+    right:
+      - text: Projects
+        href: project/index.qmd
+      - text: وبلاگ
+        href: fa/index.qmd
+      - text: Blog
+        href: en/index.qmd
+      - text: About
+        href: about/index.qmd
+      - icon: github
+        menu:
+          - text: Source Code
+            url:  https://github.com/alirezach/personal
+          - text: Report a Bug
+            url:  https://github.com/alirezach/personal/issues
+  page-footer:
+    border: false
+    right: "© [Alireza Chamanzar](https://github.com/alirezach) 2024~"
+    left: "Made with ♥ by R and quarto."
+
+format:
+  html:
+    theme:
+      light: sandstone
+      dark: sandstone
+    css: style.css
+    code-link: true
+    link-external-icon: true
+    link-external-newwindow: true
+    smooth-scroll: true
+    highlight-style: gruvbox
+    df-print: kable
+
+editor: visual
