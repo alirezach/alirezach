@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  blog:
+    title: My journey to Data Analytics
+    path: blog
 execute:
   freeze: auto
 
