@@ -1,0 +1,15 @@
+[
+  {
+    "listing": "/en/index.html",
+    "items": [
+      "/en/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/en/posts/welcome/index.html",
+      "/posts/welcome/index.html"
+    ]
+  }
+]
