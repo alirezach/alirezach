@@ -1,15 +1,8 @@
 [
   {
-    "listing": "/en/index.html",
-    "items": [
-      "/en/posts/welcome/index.html"
-    ]
-  },
-  {
     "listing": "/blog.html",
     "items": [
-      "/en/posts/welcome/index.html",
-      "/posts/welcome/index.html"
+      "/blog/2024-07-26-welcome/index.html"
     ]
   }
 ]

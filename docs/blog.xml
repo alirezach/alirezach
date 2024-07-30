@@ -14,7 +14,7 @@
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Alireza Chamanzar</dc:creator>
-  <link>https://alirezach.github.io/en/posts/welcome/</link>
+  <link>https://alirezach.github.io/blog/2024-07-26-welcome/</link>
   <description><![CDATA[ 
 
 
@@ -22,34 +22,13 @@
 
 
 <p>This is the first and offcourse automate post in a My R+Quarto blog. Welcome!</p>
-<p><img src="https://alirezach.github.io/en/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
+<p><img src="https://alirezach.github.io/blog/2024-07-26-welcome/thumbnail.jpg" class="img-fluid"></p>
 
 
 
  ]]></description>
   <category>news</category>
-  <guid>https://alirezach.github.io/en/posts/welcome/</guid>
-  <pubDate>Thu, 25 Jul 2024 20:30:00 GMT</pubDate>
-</item>
-<item>
-  <title>به وبلاگ من خوش‌آمدید</title>
-  <dc:creator>علیرضا چمن‌زار</dc:creator>
-  <link>https://alirezach.github.io/posts/welcome/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>این اولین تلاش من برای راه‌اندازی وبلاگ به کمک R و کوارتو هست.</p>
-<p><img src="https://alirezach.github.io/posts/welcome/thumbnail.jpg" class="img-fluid"></p>
-<p>از این پس یادداشت‌های حوزه تحلیل داده و آموزش‌های من در این وبلاگ منتشر می‌شود.</p>
-
-
-
- ]]></description>
-  <category>عمومی</category>
-  <guid>https://alirezach.github.io/posts/welcome/</guid>
+  <guid>https://alirezach.github.io/blog/2024-07-26-welcome/</guid>
   <pubDate>Thu, 25 Jul 2024 20:30:00 GMT</pubDate>
 </item>
 </channel>
