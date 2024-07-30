@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Data Analytics by R and else</title>
+<title>یادداشت‌های تحلیلی و آموزشی در دنیای تحلیل داده – Data Analytics by R and else</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,15 +70,73 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/english.scss">
-<meta property="og:title" content="Data Analytics by R and else">
+<link rel="alternate" type="application/rss+xml" title="Data Analytics by R and else" href="fa.xml" data-external="1"><meta property="og:title" content="یادداشت‌های تحلیلی و آموزشی در دنیای تحلیل داده – Data Analytics by R and else">
 <meta property="og:site_name" content="Data Analytics by R and else">
 <meta property="og:locale" content="en_US, fa_IR">
-<meta name="twitter:title" content="Data Analytics by R and else">
-<meta name="twitter:creator" content="@alirezach">
+<meta name="twitter:title" content="یادداشت‌های تحلیلی و آموزشی در دنیای تحلیل داده – Data Analytics by R and else">
+<meta name="twitter:creator" content="@alireza">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -93,11 +153,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="https://alirezach.github.io/persian"> 
-<span class="menu-text">وبلاگ فارسی</span></a>
+    <a class="nav-link" href="./fa/index.html"> 
+<span class="menu-text">وبلاگ</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./en/index.html"> 
+    <a class="nav-link" href="./en/index.qmd"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -112,11 +172,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-bi-github">    
         <li>
-    <a class="dropdown-item" href="https://github.com/alirezach/alirezach.github.io">
+    <a class="dropdown-item" href="https://github.com/alirezach/personal">
  <span class="dropdown-text">Source Code</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/alirezach.github.io/issues">
+    <a class="dropdown-item" href="https://github.com/alirezach/personal/issues">
  <span class="dropdown-text">Report a Bug</span></a>
   </li>  
     </ul>
@@ -133,18 +193,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="عمومی">عمومی <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Analytics by R and else</h1>
+<h1 class="title">یادداشت‌های تحلیلی و آموزشی در دنیای تحلیل داده</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -156,23 +218,116 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="columns">
-<div class="column" style="width:40%;">
-<p><img src="images/home.jpeg" class="img-fluid"></p>
-</div><div class="column" style="width:60%;">
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<p>Hello! I’m Alireza Chamanzar, a passionate Data Analytics and AI enthusiast with a keen interest in unraveling the complexities of social policy and societal inequality. Currently, I’m immersed in academic studies focused on social policy, while simultaneously dedicating my research to understanding and addressing inequality in society.</p>
-<p>Professionally, I thrive in the dynamic fields of Data Analytics and Business Intelligence. My journey has equipped me with a robust skill set, including expertise in R (my programming language of choice), SQL, and a solid grounding in Python. My love for data doesn’t stop there; I am also highly proficient in Microsoft Excel and Google Sheets, and I have hands-on experience with powerful visualization tools like Tableau and Power BI.</p>
-<p>Curiosity drives me to continuously explore new ways to harness the power of data to create meaningful insights and solutions. Whether I’m diving deep into datasets, developing innovative AI models, or crafting visual stories with data, I am always excited about the next challenge and the potential impact my work can have on making the world a fairer place.</p>
-<div class="social-links">
-<p><a href="https://github.com/a-chamanzar"><img src="images/github.webp" width="32" height="32" alt="GitHub"></a> <a href="https://linkedin.com/in/yourusername"><img src="images/linkedin.webp" width="32" height="32" alt="LinkedIn"></a> <a href="https://mastodon.social/@yourusername"><img src="images/mastodon.png" width="32" height="32" alt="Mastodon"></a> <a href="https://twitter.com/yourusername"><img src="images/x.webp" width="32" height="32" alt="X"></a> <a href="mailto:your.email@example.com"><img src="images/mail.webp" width="32" height="32" alt="Email"></a> <a href=".\en"><img src="images/blog.png" width="32" height="32" alt="Blog"></a> <a href=".\fa"><img src="images/blog.png" width="32" height="32" alt="Persian Blog"></a></p>
-</div>
-</section>
-</div>
-</div>
 
-</main> <!-- /main -->
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="عمومی" data-listing-date-sort="1721939400000" data-listing-file-modified-sort="1722261055466" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+<div class="thumbnail">
+<p><a href="./fa/posts/welcome/index.html" class="no-external"></a></p><a href="./fa/posts/welcome/index.html" class="no-external">
+<p class="card-img-top"><img src="fa\posts\welcome\thumbnail.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./fa/posts/welcome/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./fa/posts/welcome/index.html" class="no-external">به وبلاگ من خوش‌آمدید</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./fa/posts/welcome/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('عمومی'); return false;">
+عمومی
+</div>
+</div>
+<div class="listing-description">
+<a href="./fa/posts/welcome/index.html" class="no-external">این اولین تلاش من برای راه‌اندازی وبلاگ به کمک R و کوارتو هست.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./fa/posts/welcome/index.html" class="no-external">
+<div class="listing-date">
+Jul 26, 2024
+</div>
+<div class="listing-author">
+علیرضا چمن‌زار
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="عمومی" data-listing-date-sort="1721939400000" data-listing-file-modified-sort="1722261055466" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+<div class="thumbnail">
+<p><a href="./farsi/posts/welcome/index.html" class="no-external"></a></p><a href="./farsi/posts/welcome/index.html" class="no-external">
+<p class="card-img-top"><img src="farsi\posts\welcome\thumbnail.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./farsi/posts/welcome/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./farsi/posts/welcome/index.html" class="no-external">به وبلاگ من خوش‌آمدید</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./farsi/posts/welcome/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('عمومی'); return false;">
+عمومی
+</div>
+</div>
+<div class="listing-description">
+<a href="./farsi/posts/welcome/index.html" class="no-external">این اولین تلاش من برای راه‌اندازی وبلاگ به کمک R و کوارتو هست.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./farsi/posts/welcome/index.html" class="no-external">
+<div class="listing-date">
+Jul 26, 2024
+</div>
+<div class="listing-author">
+علیرضا چمن‌زار
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="عمومی" data-listing-date-sort="1721939400000" data-listing-file-modified-sort="1722261055466" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="27">
+<div class="thumbnail">
+<p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
+<p class="card-img-top"><img src="posts\welcome\thumbnail.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/welcome/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/welcome/index.html" class="no-external">به وبلاگ من خوش‌آمدید</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/welcome/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('عمومی'); return false;">
+عمومی
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/welcome/index.html" class="no-external">این اولین تلاش من برای راه‌اندازی وبلاگ به کمک R و کوارتو هست.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/welcome/index.html" class="no-external">
+<div class="listing-date">
+Jul 26, 2024
+</div>
+<div class="listing-author">
+علیرضا چمن‌زار
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

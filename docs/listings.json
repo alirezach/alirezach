@@ -1,0 +1,28 @@
+[
+  {
+    "listing": "/farsi/index.html",
+    "items": [
+      "/farsi/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/fa.html",
+    "items": [
+      "/fa/posts/welcome/index.html",
+      "/farsi/posts/welcome/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/fa/index.html",
+    "items": [
+      "/fa/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/en/index.html",
+    "items": [
+      "/en/posts/welcome/index.html"
+    ]
+  }
+]

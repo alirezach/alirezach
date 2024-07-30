@@ -1,0 +1,8 @@
+format:
+  html:
+    theme:
+      light: ../styles/english.scss
+    output-dir: ../docs/english
+
+project:
+  title: "My journey to Data Analytics"

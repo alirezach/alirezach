@@ -64,7 +64,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -106,7 +105,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/english.scss">
+<meta property="og:title" content="About – Data Analytics by R and else">
+<meta property="og:description" content="A passionate Data Analytics and AI enthusiast">
+<meta property="og:site_name" content="Data Analytics by R and else">
+<meta property="og:locale" content="en_US, fa_IR">
+<meta name="twitter:title" content="About – Data Analytics by R and else">
+<meta name="twitter:description" content="A passionate Data Analytics and AI enthusiast">
+<meta name="twitter:creator" content="@alireza">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -122,11 +129,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./project/index.qmd"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./fa/index.qmd"> 
+    <a class="nav-link" href="./fa/index.html"> 
 <span class="menu-text">وبلاگ</span></a>
   </li>  
   <li class="nav-item">
@@ -436,7 +439,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/alirezach\.github\.io\/");
+      var filterRegex = new RegExp("https:\/\/alirezach\.github\.io");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }

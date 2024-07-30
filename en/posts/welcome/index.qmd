@@ -1,0 +1,10 @@
+---
+title: "Welcome To My Blog"
+author: "Alireza Chamanzar"
+date: "2024-07-26"
+categories: [news]
+---
+
+This is the first and offcourse automate post in a My R+Quarto blog. Welcome!
+
+![](thumbnail.jpg)
