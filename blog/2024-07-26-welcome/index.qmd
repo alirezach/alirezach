@@ -1,5 +1,6 @@
 ---
 title: "Welcome To My Blog"
+description: "blog post description (appears underneath the title in smaller text) which is included on the listing page"
 author: "Alireza Chamanzar"
 date: "2024-07-26"
 categories: [news]

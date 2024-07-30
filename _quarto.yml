@@ -10,7 +10,7 @@ website:
   site-url: https://alirezach.github.io
   description: "A passionate Data Analytics and AI enthusiast"
   open-graph:
-    locale: en_US, fa_IR
+    locale: en_US
   twitter-card:
     creator: "@alirezach"
   navbar:
@@ -18,14 +18,14 @@ website:
     logo-alt: "Alireza Chamanzar"
     title: false
     right:
-#      - text: Projects
-#        href: project/index.qmd
+      - text: Home
+        href: index.qmd
+      - text: Blog
+        href: blog.qmd
+#      - text: About
+#        href: about.qmd
       - text: وبلاگ فارسی
         href: https://alirezach.github.io/persian
-      - text: Blog
-        href: en/index.qmd
-      - text: About
-        href: about/index.qmd
       - icon: github
         menu:
           - text: Source Code
@@ -43,15 +43,12 @@ format:
       light: sandstone
       dark: sandstone
     css: styles/english.scss
+    toc: true
     code-link: true
     link-external-icon: true
     link-external-newwindow: true
     smooth-scroll: true
     highlight-style: gruvbox
     df-print: kable
-
-files:
-  english:
-    site: en/_quarto.yml
 
 editor: visual
