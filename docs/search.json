@@ -4,14 +4,14 @@
     "href": "index.html",
     "title": "Data Analytics by R and else",
     "section": "",
-    "text": "Welcome\nHello! I’m Alireza Chamanzar, a passionate Data Analytics and AI enthusiast with a keen interest in unraveling the complexities of social policy and societal inequality. Currently, I’m immersed in academic studies focused on social policy, while simultaneously dedicating my research to understanding and addressing inequality in society.\nProfessionally, I thrive in the dynamic fields of Data Analytics and Business Intelligence. My journey has equipped me with a robust skill set, including expertise in R (my programming language of choice), SQL, and a solid grounding in Python. My love for data doesn’t stop there; I am also highly proficient in Microsoft Excel and Google Sheets, and I have hands-on experience with powerful visualization tools like Tableau and Power BI.\nCuriosity drives me to continuously explore new ways to harness the power of data to create meaningful insights and solutions. Whether I’m diving deep into datasets, developing innovative AI models, or crafting visual stories with data, I am always excited about the next challenge and the potential impact my work can have on making the world a fairer place."
+    "text": "Welcome\nHello! I’m Alireza Chamanzar, a passionate Data Analytics and AI enthusiast with a keen interest in unraveling the complexities of social policy and societal inequality.\nProfessionally, I thrive in the dynamic fields of Data Analytics and Business Intelligence. My journey has equipped me with a robust skill set, including expertise in R (my programming language of choice), SQL, and a solid grounding in Python. My love for data doesn’t stop there; I am also highly proficient in Microsoft Excel and Google Sheets, and I have hands-on experience with powerful visualization tools like Tableau and Power BI.\nCuriosity drives me to continuously explore new ways to harness the power of data to create meaningful insights and solutions. Whether I’m diving deep into datasets, developing innovative AI models, or crafting visual stories with data, I am always excited about the next challenge and the potential impact my work can have on making the world a fairer place.\nCurrently In Social policy field, I’m immersed in academic studies focused on poverty and education, while simultaneously dedicating my research to understanding and addressing inequality in society."
   },
   {
-    "objectID": "blog/2024-07-26-welcome/index.html",
-    "href": "blog/2024-07-26-welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "My journey to data analytic",
     "section": "",
-    "text": "This is the first and offcourse automate post in a My R+Quarto blog. Welcome!"
+    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\n\n\nJul 26, 2024\n\n\nAlireza Chamanzar\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -21,10 +21,10 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "My journey to data analytic",
+    "objectID": "blog/2024-07-26-welcome/index.html",
+    "href": "blog/2024-07-26-welcome/index.html",
+    "title": "Welcome To My Blog",
     "section": "",
-    "text": "Welcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\nblog post description (appears underneath the title in smaller text) which is included on the listing page\n\n\n\n\n\nJul 26, 2024\n\n\nAlireza Chamanzar\n\n\n\n\n\n\nNo matching items"
+    "text": "This is the first and offcourse automate post in a My R+Quarto blog. Welcome!"
   }
 ]

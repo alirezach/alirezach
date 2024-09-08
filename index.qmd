@@ -12,13 +12,15 @@ page-layout: full
 ::: {.column width="60%"}
 # Welcome
 
-Hello! I'm Alireza Chamanzar, a passionate Data Analytics and AI enthusiast with a keen interest in unraveling the complexities of social policy and societal inequality. Currently, I'm immersed in academic studies focused on social policy, while simultaneously dedicating my research to understanding and addressing inequality in society.
+Hello! I'm Alireza Chamanzar, a passionate Data Analytics and AI enthusiast with a keen interest in unraveling the complexities of social policy and societal inequality.
 
 Professionally, I thrive in the dynamic fields of Data Analytics and Business Intelligence. My journey has equipped me with a robust skill set, including expertise in R (my programming language of choice), SQL, and a solid grounding in Python. My love for data doesn't stop there; I am also highly proficient in Microsoft Excel and Google Sheets, and I have hands-on experience with powerful visualization tools like Tableau and Power BI.
 
 Curiosity drives me to continuously explore new ways to harness the power of data to create meaningful insights and solutions. Whether I'm diving deep into datasets, developing innovative AI models, or crafting visual stories with data, I am always excited about the next challenge and the potential impact my work can have on making the world a fairer place.
 
+Currently In Social policy field, I'm immersed in academic studies focused on poverty and education, while simultaneously dedicating my research to understanding and addressing inequality in society.
+
 ::: social-links
-[![GitHub](images/github.webp){width="32" height="32"}](https://github.com/a-chamanzar) [![LinkedIn](images/linkedin.webp){width="32" height="32"}](https://linkedin.com/in/yourusername) [![Mastodon](images/mastodon.png){width="32" height="32"}](https://mastodon.social/@yourusername) [![X](images/x.webp){width="32" height="32"}](https://twitter.com/yourusername) [![Email](images/mail.webp){width="32" height="32"}](mailto:your.email@example.com) [![Blog](images/blog.png){width="32" height="32"}](/en) [![Persian Blog](images/blog.png){width="32" height="32"}](/fa)
+[![GitHub](images/github.webp){width="32" height="32"}](https://github.com/alirezach) [![LinkedIn](images/linkedin.webp){width="32" height="32"}](https://linkedin.com/in/alirezachamanzar) [![Mastodon](images/mastodon.png){width="32" height="32"}](https://masto.ai/@alirezach) [![X](images/x.webp){width="32" height="32"}](https://x.com/alirezach) [![Email](images/mail.webp){width="32" height="32"}](mailto:alirezach70@gmail.com) [![Blog](images/blog.png){width="32" height="32"}](/blog) [![Persian Blog](images/blog.png){width="32" height="32"}](/persian)
 :::
 :::

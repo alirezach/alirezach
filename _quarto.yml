@@ -32,6 +32,8 @@ website:
             url:  https://github.com/alirezach/alirezach.github.io
           - text: Report a Bug
             url:  https://github.com/alirezach.github.io/issues
+      - text: CV
+        href: https://alirezach.github.io/cv.pdf
   page-footer:
     border: false
     right: "© [Alireza Chamanzar](https://github.com/alirezach) 2024~"
